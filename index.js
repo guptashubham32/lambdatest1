@@ -3,6 +3,6 @@ exports.handler = async (event) => {
 
     return {
         statusCode: 200,
-        body: JSON.stringify('Hello World!')
+        body: JSON.stringify('Shubham is playing.')
     };
 };
