@@ -9,7 +9,7 @@ exports.handler = async (event) => {
     const requestBody = JSON.parse(event.body);
 
     // Retrieve secrets using the 'server' value from the request body
-    const dbSecrets = await getSecret(requestBody.server);
+    // const dbSecrets = await getSecret(requestBody.server);
 
     // Construct and return the response
     const response = {
@@ -19,8 +19,8 @@ exports.handler = async (event) => {
             tenantId: requestBody.tenantId,
             templateId: requestBody.templateId,
             startDate: requestBody.startDate,
-            endDate: requestBody.endDate,
-            dbName: dbSecrets.dbname
+            endDate: requestBody.endDate
+            // dbName: dbSecrets.dbname
         }),
     };
 
