@@ -12,7 +12,13 @@ jobs:
 
     strategy:
       matrix:
-        region: ["us-east-1", "eu-west-1", "ap-southeast-1"] # Add or remove regions as needed
+        region: [
+            "us-east-1",
+            "eu-west-1",
+            "ap-southeast-1",
+            "ap-south-1",
+            "ap-southeast-2",
+          ] # Add or remove regions as needed
 
     steps:
       - name: Checkout
