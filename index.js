@@ -19,8 +19,8 @@ exports.handler = async (event) => {
             tenantId: requestBody.tenantId,
             templateId: requestBody.templateId,
             startDate: requestBody.startDate,
-            endDate: requestBody.endDate
-            // dbName: dbSecrets.dbname
+            endDate: requestBody.endDate,
+            dbName: "Shubham",
         }),
     };
 
